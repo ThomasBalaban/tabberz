@@ -68,23 +68,34 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'tabberzbackend.wsgi.application'
 
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'tabbersbackendschema',
+#         'USER': 'root',
+#         'PASSWORD': 'password',
+#         'HOST': '',
+#         'PORT': '3306',
+#         'OPTIONS': {
+#             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+#         },
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'root$tabbersbackendschema',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': '',
-        'PORT': '3306',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        },
+        'NAME': 'tabberz$tabbersbackendschema',
+        'USER': 'paladen2',
+        'PASSWORD': 'password123',
+        'HOST': 'paladen2.mysql.pythonanywhere-services.com',
     }
 }
 
