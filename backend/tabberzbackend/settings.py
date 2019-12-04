@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'tabberzbackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tabbersbackendschema',
+        'NAME': 'root$tabbersbackendschema',
         'USER': 'root',
         'PASSWORD': 'password',
         'HOST': '',
