@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'tabberzbackend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'paladen2$tabbersbackendschema',
         'USER': 'paladen2',
         'PASSWORD': 'password123',
